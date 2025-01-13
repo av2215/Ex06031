@@ -30,7 +30,13 @@ public class MainActivity extends AppCompatActivity {
         count++;
         tv.setText("This is a click number:"+count);
 
-        tv.setTextColor(Color.RED);
+        tv.setWidth(50);
+        if(count==6)
+        {
+            tv.setText("Enough to click. Go to new start!");
+            count=0;
+        }
+
 
 
     }
